@@ -7,7 +7,7 @@
 package api
 
 import (
-	core2 "github.com/tron-client/core"
+	core2 "github.com/crypee-ecoinomy/tron-client/core"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"

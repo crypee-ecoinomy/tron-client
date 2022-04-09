@@ -1,4 +1,4 @@
-module github.com/tron-client
+module github.com/crypee-ecoinomy/tron-client
 
 require (
 	google.golang.org/genproto v0.0.0-20200825200019-8632dd797987
