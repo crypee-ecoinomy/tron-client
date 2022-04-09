@@ -7,7 +7,7 @@
 package api
 
 import (
-	core2 "github.com/crypee-ecoinomy/tron-client/core"
+	core "github.com/crypee-ecoinomy/tron-client/core"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
@@ -334,7 +334,7 @@ type WitnessList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Witnesses []*core2.Witness `protobuf:"bytes,1,rep,name=witnesses,proto3" json:"witnesses,omitempty"`
+	Witnesses []*core.Witness `protobuf:"bytes,1,rep,name=witnesses,proto3" json:"witnesses,omitempty"`
 }
 
 func (x *WitnessList) Reset() {
@@ -369,7 +369,7 @@ func (*WitnessList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *WitnessList) GetWitnesses() []*core2.Witness {
+func (x *WitnessList) GetWitnesses() []*core.Witness {
 	if x != nil {
 		return x.Witnesses
 	}
@@ -381,7 +381,7 @@ type ProposalList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Proposals []*core2.Proposal `protobuf:"bytes,1,rep,name=proposals,proto3" json:"proposals,omitempty"`
+	Proposals []*core.Proposal `protobuf:"bytes,1,rep,name=proposals,proto3" json:"proposals,omitempty"`
 }
 
 func (x *ProposalList) Reset() {
@@ -416,7 +416,7 @@ func (*ProposalList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *ProposalList) GetProposals() []*core2.Proposal {
+func (x *ProposalList) GetProposals() []*core.Proposal {
 	if x != nil {
 		return x.Proposals
 	}
@@ -428,7 +428,7 @@ type ExchangeList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Exchanges []*core2.Exchange `protobuf:"bytes,1,rep,name=exchanges,proto3" json:"exchanges,omitempty"`
+	Exchanges []*core.Exchange `protobuf:"bytes,1,rep,name=exchanges,proto3" json:"exchanges,omitempty"`
 }
 
 func (x *ExchangeList) Reset() {
@@ -463,7 +463,7 @@ func (*ExchangeList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{4}
 }
 
-func (x *ExchangeList) GetExchanges() []*core2.Exchange {
+func (x *ExchangeList) GetExchanges() []*core.Exchange {
 	if x != nil {
 		return x.Exchanges
 	}
@@ -475,7 +475,7 @@ type AssetIssueList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	AssetIssue []*core2.AssetIssueContract `protobuf:"bytes,1,rep,name=assetIssue,proto3" json:"assetIssue,omitempty"`
+	AssetIssue []*core.AssetIssueContract `protobuf:"bytes,1,rep,name=assetIssue,proto3" json:"assetIssue,omitempty"`
 }
 
 func (x *AssetIssueList) Reset() {
@@ -510,7 +510,7 @@ func (*AssetIssueList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{5}
 }
 
-func (x *AssetIssueList) GetAssetIssue() []*core2.AssetIssueContract {
+func (x *AssetIssueList) GetAssetIssue() []*core.AssetIssueContract {
 	if x != nil {
 		return x.AssetIssue
 	}
@@ -522,7 +522,7 @@ type BlockList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Block []*core2.Block `protobuf:"bytes,1,rep,name=block,proto3" json:"block,omitempty"`
+	Block []*core.Block `protobuf:"bytes,1,rep,name=block,proto3" json:"block,omitempty"`
 }
 
 func (x *BlockList) Reset() {
@@ -557,7 +557,7 @@ func (*BlockList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{6}
 }
 
-func (x *BlockList) GetBlock() []*core2.Block {
+func (x *BlockList) GetBlock() []*core.Block {
 	if x != nil {
 		return x.Block
 	}
@@ -569,7 +569,7 @@ type TransactionList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction []*core2.Transaction `protobuf:"bytes,1,rep,name=transaction,proto3" json:"transaction,omitempty"`
+	Transaction []*core.Transaction `protobuf:"bytes,1,rep,name=transaction,proto3" json:"transaction,omitempty"`
 }
 
 func (x *TransactionList) Reset() {
@@ -604,7 +604,7 @@ func (*TransactionList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{7}
 }
 
-func (x *TransactionList) GetTransaction() []*core2.Transaction {
+func (x *TransactionList) GetTransaction() []*core.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -671,7 +671,7 @@ type DelegatedResourceList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	DelegatedResource []*core2.DelegatedResource `protobuf:"bytes,1,rep,name=delegatedResource,proto3" json:"delegatedResource,omitempty"`
+	DelegatedResource []*core.DelegatedResource `protobuf:"bytes,1,rep,name=delegatedResource,proto3" json:"delegatedResource,omitempty"`
 }
 
 func (x *DelegatedResourceList) Reset() {
@@ -706,7 +706,7 @@ func (*DelegatedResourceList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{9}
 }
 
-func (x *DelegatedResourceList) GetDelegatedResource() []*core2.DelegatedResource {
+func (x *DelegatedResourceList) GetDelegatedResource() []*core.DelegatedResource {
 	if x != nil {
 		return x.DelegatedResource
 	}
@@ -1167,9 +1167,9 @@ type AccountPaginated struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Account *core2.Account `protobuf:"bytes,1,opt,name=account,proto3" json:"account,omitempty"`
-	Offset  int64          `protobuf:"varint,2,opt,name=offset,proto3" json:"offset,omitempty"`
-	Limit   int64          `protobuf:"varint,3,opt,name=limit,proto3" json:"limit,omitempty"`
+	Account *core.Account `protobuf:"bytes,1,opt,name=account,proto3" json:"account,omitempty"`
+	Offset  int64         `protobuf:"varint,2,opt,name=offset,proto3" json:"offset,omitempty"`
+	Limit   int64         `protobuf:"varint,3,opt,name=limit,proto3" json:"limit,omitempty"`
 }
 
 func (x *AccountPaginated) Reset() {
@@ -1204,7 +1204,7 @@ func (*AccountPaginated) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{19}
 }
 
-func (x *AccountPaginated) GetAccount() *core2.Account {
+func (x *AccountPaginated) GetAccount() *core.Account {
 	if x != nil {
 		return x.Account
 	}
@@ -1895,9 +1895,9 @@ type EasyTransferResponse struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction *core2.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
-	Result      *Return            `protobuf:"bytes,2,opt,name=result,proto3" json:"result,omitempty"`
-	Txid        []byte             `protobuf:"bytes,3,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
+	Transaction *core.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
+	Result      *Return           `protobuf:"bytes,2,opt,name=result,proto3" json:"result,omitempty"`
+	Txid        []byte            `protobuf:"bytes,3,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
 }
 
 func (x *EasyTransferResponse) Reset() {
@@ -1932,7 +1932,7 @@ func (*EasyTransferResponse) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{28}
 }
 
-func (x *EasyTransferResponse) GetTransaction() *core2.Transaction {
+func (x *EasyTransferResponse) GetTransaction() *core.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -2013,11 +2013,11 @@ type TransactionExtention struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Transaction    *core2.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
-	Txid           []byte             `protobuf:"bytes,2,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
-	ConstantResult [][]byte           `protobuf:"bytes,3,rep,name=constant_result,json=constantResult,proto3" json:"constant_result,omitempty"`
-	Result         *Return            `protobuf:"bytes,4,opt,name=result,proto3" json:"result,omitempty"`
-	EnergyUsed     int64              `protobuf:"varint,5,opt,name=energy_used,json=energyUsed,proto3" json:"energy_used,omitempty"`
+	Transaction    *core.Transaction `protobuf:"bytes,1,opt,name=transaction,proto3" json:"transaction,omitempty"`
+	Txid           []byte            `protobuf:"bytes,2,opt,name=txid,proto3" json:"txid,omitempty"` //transaction id = sha256(transaction.raw_data)
+	ConstantResult [][]byte          `protobuf:"bytes,3,rep,name=constant_result,json=constantResult,proto3" json:"constant_result,omitempty"`
+	Result         *Return           `protobuf:"bytes,4,opt,name=result,proto3" json:"result,omitempty"`
+	EnergyUsed     int64             `protobuf:"varint,5,opt,name=energy_used,json=energyUsed,proto3" json:"energy_used,omitempty"`
 }
 
 func (x *TransactionExtention) Reset() {
@@ -2052,7 +2052,7 @@ func (*TransactionExtention) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{30}
 }
 
-func (x *TransactionExtention) GetTransaction() *core2.Transaction {
+func (x *TransactionExtention) GetTransaction() *core.Transaction {
 	if x != nil {
 		return x.Transaction
 	}
@@ -2093,7 +2093,7 @@ type BlockExtention struct {
 	unknownFields protoimpl.UnknownFields
 
 	Transactions []*TransactionExtention `protobuf:"bytes,1,rep,name=transactions,proto3" json:"transactions,omitempty"`
-	BlockHeader  *core2.BlockHeader      `protobuf:"bytes,2,opt,name=block_header,json=blockHeader,proto3" json:"block_header,omitempty"`
+	BlockHeader  *core.BlockHeader       `protobuf:"bytes,2,opt,name=block_header,json=blockHeader,proto3" json:"block_header,omitempty"`
 	Blockid      []byte                  `protobuf:"bytes,3,opt,name=blockid,proto3" json:"blockid,omitempty"`
 }
 
@@ -2136,7 +2136,7 @@ func (x *BlockExtention) GetTransactions() []*TransactionExtention {
 	return nil
 }
 
-func (x *BlockExtention) GetBlockHeader() *core2.BlockHeader {
+func (x *BlockExtention) GetBlockHeader() *core.BlockHeader {
 	if x != nil {
 		return x.BlockHeader
 	}
@@ -2249,8 +2249,8 @@ type BlockIncrementalMerkleTree struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Number     int64                        `protobuf:"varint,1,opt,name=number,proto3" json:"number,omitempty"`
-	MerkleTree *core2.IncrementalMerkleTree `protobuf:"bytes,2,opt,name=merkleTree,proto3" json:"merkleTree,omitempty"`
+	Number     int64                       `protobuf:"varint,1,opt,name=number,proto3" json:"number,omitempty"`
+	MerkleTree *core.IncrementalMerkleTree `protobuf:"bytes,2,opt,name=merkleTree,proto3" json:"merkleTree,omitempty"`
 }
 
 func (x *BlockIncrementalMerkleTree) Reset() {
@@ -2292,7 +2292,7 @@ func (x *BlockIncrementalMerkleTree) GetNumber() int64 {
 	return 0
 }
 
-func (x *BlockIncrementalMerkleTree) GetMerkleTree() *core2.IncrementalMerkleTree {
+func (x *BlockIncrementalMerkleTree) GetMerkleTree() *core.IncrementalMerkleTree {
 	if x != nil {
 		return x.MerkleTree
 	}
@@ -2304,7 +2304,7 @@ type TransactionSignWeight struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Permission    *core2.Permission             `protobuf:"bytes,1,opt,name=permission,proto3" json:"permission,omitempty"`
+	Permission    *core.Permission              `protobuf:"bytes,1,opt,name=permission,proto3" json:"permission,omitempty"`
 	ApprovedList  [][]byte                      `protobuf:"bytes,2,rep,name=approved_list,json=approvedList,proto3" json:"approved_list,omitempty"`
 	CurrentWeight int64                         `protobuf:"varint,3,opt,name=current_weight,json=currentWeight,proto3" json:"current_weight,omitempty"`
 	Result        *TransactionSignWeight_Result `protobuf:"bytes,4,opt,name=result,proto3" json:"result,omitempty"`
@@ -2343,7 +2343,7 @@ func (*TransactionSignWeight) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{35}
 }
 
-func (x *TransactionSignWeight) GetPermission() *core2.Permission {
+func (x *TransactionSignWeight) GetPermission() *core.Permission {
 	if x != nil {
 		return x.Permission
 	}
@@ -2816,10 +2816,10 @@ type SpendNote struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Note    *Note                           `protobuf:"bytes,3,opt,name=note,proto3" json:"note,omitempty"`
-	Alpha   []byte                          `protobuf:"bytes,4,opt,name=alpha,proto3" json:"alpha,omitempty"` // random number for spend authority signature
-	Voucher *core2.IncrementalMerkleVoucher `protobuf:"bytes,5,opt,name=voucher,proto3" json:"voucher,omitempty"`
-	Path    []byte                          `protobuf:"bytes,6,opt,name=path,proto3" json:"path,omitempty"` // path for cm from leaf to root in merkle tree
+	Note    *Note                          `protobuf:"bytes,3,opt,name=note,proto3" json:"note,omitempty"`
+	Alpha   []byte                         `protobuf:"bytes,4,opt,name=alpha,proto3" json:"alpha,omitempty"` // random number for spend authority signature
+	Voucher *core.IncrementalMerkleVoucher `protobuf:"bytes,5,opt,name=voucher,proto3" json:"voucher,omitempty"`
+	Path    []byte                         `protobuf:"bytes,6,opt,name=path,proto3" json:"path,omitempty"` // path for cm from leaf to root in merkle tree
 }
 
 func (x *SpendNote) Reset() {
@@ -2868,7 +2868,7 @@ func (x *SpendNote) GetAlpha() []byte {
 	return nil
 }
 
-func (x *SpendNote) GetVoucher() *core2.IncrementalMerkleVoucher {
+func (x *SpendNote) GetVoucher() *core.IncrementalMerkleVoucher {
 	if x != nil {
 		return x.Voucher
 	}
@@ -3235,10 +3235,10 @@ type NfParameters struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Note    *Note                           `protobuf:"bytes,1,opt,name=note,proto3" json:"note,omitempty"`
-	Voucher *core2.IncrementalMerkleVoucher `protobuf:"bytes,2,opt,name=voucher,proto3" json:"voucher,omitempty"`
-	Ak      []byte                          `protobuf:"bytes,3,opt,name=ak,proto3" json:"ak,omitempty"`
-	Nk      []byte                          `protobuf:"bytes,4,opt,name=nk,proto3" json:"nk,omitempty"`
+	Note    *Note                          `protobuf:"bytes,1,opt,name=note,proto3" json:"note,omitempty"`
+	Voucher *core.IncrementalMerkleVoucher `protobuf:"bytes,2,opt,name=voucher,proto3" json:"voucher,omitempty"`
+	Ak      []byte                         `protobuf:"bytes,3,opt,name=ak,proto3" json:"ak,omitempty"`
+	Nk      []byte                         `protobuf:"bytes,4,opt,name=nk,proto3" json:"nk,omitempty"`
 }
 
 func (x *NfParameters) Reset() {
@@ -3280,7 +3280,7 @@ func (x *NfParameters) GetNote() *Note {
 	return nil
 }
 
-func (x *NfParameters) GetVoucher() *core2.IncrementalMerkleVoucher {
+func (x *NfParameters) GetVoucher() *core.IncrementalMerkleVoucher {
 	if x != nil {
 		return x.Voucher
 	}
@@ -3889,7 +3889,7 @@ type TransactionInfoList struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	TransactionInfo []*core2.TransactionInfo `protobuf:"bytes,1,rep,name=transactionInfo,proto3" json:"transactionInfo,omitempty"`
+	TransactionInfo []*core.TransactionInfo `protobuf:"bytes,1,rep,name=transactionInfo,proto3" json:"transactionInfo,omitempty"`
 }
 
 func (x *TransactionInfoList) Reset() {
@@ -3924,7 +3924,7 @@ func (*TransactionInfoList) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{58}
 }
 
-func (x *TransactionInfoList) GetTransactionInfo() []*core2.TransactionInfo {
+func (x *TransactionInfoList) GetTransactionInfo() []*core.TransactionInfo {
 	if x != nil {
 		return x.TransactionInfo
 	}
@@ -4237,12 +4237,12 @@ type ShieldedTRC20Parameters struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	SpendDescription     []*core2.SpendDescription   `protobuf:"bytes,1,rep,name=spend_description,json=spendDescription,proto3" json:"spend_description,omitempty"`
-	ReceiveDescription   []*core2.ReceiveDescription `protobuf:"bytes,2,rep,name=receive_description,json=receiveDescription,proto3" json:"receive_description,omitempty"`
-	BindingSignature     []byte                      `protobuf:"bytes,3,opt,name=binding_signature,json=bindingSignature,proto3" json:"binding_signature,omitempty"`
-	MessageHash          []byte                      `protobuf:"bytes,4,opt,name=message_hash,json=messageHash,proto3" json:"message_hash,omitempty"`
-	TriggerContractInput string                      `protobuf:"bytes,5,opt,name=trigger_contract_input,json=triggerContractInput,proto3" json:"trigger_contract_input,omitempty"`
-	ParameterType        string                      `protobuf:"bytes,6,opt,name=parameter_type,json=parameterType,proto3" json:"parameter_type,omitempty"`
+	SpendDescription     []*core.SpendDescription   `protobuf:"bytes,1,rep,name=spend_description,json=spendDescription,proto3" json:"spend_description,omitempty"`
+	ReceiveDescription   []*core.ReceiveDescription `protobuf:"bytes,2,rep,name=receive_description,json=receiveDescription,proto3" json:"receive_description,omitempty"`
+	BindingSignature     []byte                     `protobuf:"bytes,3,opt,name=binding_signature,json=bindingSignature,proto3" json:"binding_signature,omitempty"`
+	MessageHash          []byte                     `protobuf:"bytes,4,opt,name=message_hash,json=messageHash,proto3" json:"message_hash,omitempty"`
+	TriggerContractInput string                     `protobuf:"bytes,5,opt,name=trigger_contract_input,json=triggerContractInput,proto3" json:"trigger_contract_input,omitempty"`
+	ParameterType        string                     `protobuf:"bytes,6,opt,name=parameter_type,json=parameterType,proto3" json:"parameter_type,omitempty"`
 }
 
 func (x *ShieldedTRC20Parameters) Reset() {
@@ -4277,14 +4277,14 @@ func (*ShieldedTRC20Parameters) Descriptor() ([]byte, []int) {
 	return file_api_api_proto_rawDescGZIP(), []int{62}
 }
 
-func (x *ShieldedTRC20Parameters) GetSpendDescription() []*core2.SpendDescription {
+func (x *ShieldedTRC20Parameters) GetSpendDescription() []*core.SpendDescription {
 	if x != nil {
 		return x.SpendDescription
 	}
 	return nil
 }
 
-func (x *ShieldedTRC20Parameters) GetReceiveDescription() []*core2.ReceiveDescription {
+func (x *ShieldedTRC20Parameters) GetReceiveDescription() []*core.ReceiveDescription {
 	if x != nil {
 		return x.ReceiveDescription
 	}
@@ -6988,12 +6988,12 @@ var file_api_api_proto_rawDesc = []byte{
 	0x75, 0x6d, 0x12, 0x17, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x2e, 0x4e, 0x75,
 	0x6d, 0x62, 0x65, 0x72, 0x4d, 0x65, 0x73, 0x73, 0x61, 0x67, 0x65, 0x1a, 0x0f, 0x2e, 0x70, 0x72,
 	0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x2e, 0x42, 0x6c, 0x6f, 0x63, 0x6b, 0x22, 0x00, 0x32, 0x09,
-	0x0a, 0x07, 0x4e, 0x65, 0x74, 0x77, 0x6f, 0x72, 0x6b, 0x42, 0x41, 0x0a, 0x0c, 0x6f, 0x72, 0x67,
+	0x0a, 0x07, 0x4e, 0x65, 0x74, 0x77, 0x6f, 0x72, 0x6b, 0x42, 0x43, 0x0a, 0x0c, 0x6f, 0x72, 0x67,
 	0x2e, 0x74, 0x72, 0x6f, 0x6e, 0x2e, 0x61, 0x70, 0x69, 0x42, 0x07, 0x47, 0x72, 0x70, 0x63, 0x41,
-	0x50, 0x49, 0x5a, 0x28, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x74,
-	0x72, 0x6f, 0x6e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x63, 0x6f, 0x6c, 0x2f, 0x67, 0x72, 0x70, 0x63,
-	0x2d, 0x67, 0x61, 0x74, 0x65, 0x77, 0x61, 0x79, 0x2f, 0x61, 0x70, 0x69, 0x62, 0x06, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x33,
+	0x50, 0x49, 0x5a, 0x2a, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x63,
+	0x72, 0x79, 0x70, 0x65, 0x65, 0x2d, 0x65, 0x63, 0x6f, 0x69, 0x6e, 0x6f, 0x6d, 0x79, 0x2f, 0x74,
+	0x72, 0x6f, 0x6e, 0x2d, 0x63, 0x6c, 0x69, 0x65, 0x6e, 0x74, 0x2f, 0x61, 0x70, 0x69, 0x62, 0x06,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -7083,81 +7083,81 @@ var file_api_api_proto_goTypes = []interface{}{
 	(*NfTRC20Parameters)(nil),                        // 69: protocol.NfTRC20Parameters
 	(*NullifierResult)(nil),                          // 70: protocol.NullifierResult
 	(*ShieldedTRC20TriggerContractParameters)(nil),   // 71: protocol.ShieldedTRC20TriggerContractParameters
-	nil,                                             // 72: protocol.AccountNetMessage.AssetNetUsedEntry
-	nil,                                             // 73: protocol.AccountNetMessage.AssetNetLimitEntry
-	nil,                                             // 74: protocol.AccountResourceMessage.AssetNetUsedEntry
-	nil,                                             // 75: protocol.AccountResourceMessage.AssetNetLimitEntry
-	(*TransactionSignWeight_Result)(nil),            // 76: protocol.TransactionSignWeight.Result
-	(*TransactionApprovedList_Result)(nil),          // 77: protocol.TransactionApprovedList.Result
-	(*DecryptNotes_NoteTx)(nil),                     // 78: protocol.DecryptNotes.NoteTx
-	(*DecryptNotesMarked_NoteTx)(nil),               // 79: protocol.DecryptNotesMarked.NoteTx
-	(*DecryptNotesTRC20_NoteTx)(nil),                // 80: protocol.DecryptNotesTRC20.NoteTx
-	(*core2.Witness)(nil),                           // 81: protocol.Witness
-	(*core2.Proposal)(nil),                          // 82: protocol.Proposal
-	(*core2.Exchange)(nil),                          // 83: protocol.Exchange
-	(*core2.AssetIssueContract)(nil),                // 84: protocol.AssetIssueContract
-	(*core2.Block)(nil),                             // 85: protocol.Block
-	(*core2.Transaction)(nil),                       // 86: protocol.Transaction
-	(*core2.DelegatedResource)(nil),                 // 87: protocol.DelegatedResource
-	(*core2.Account)(nil),                           // 88: protocol.Account
-	(*core2.BlockHeader)(nil),                       // 89: protocol.BlockHeader
-	(*core2.IncrementalMerkleTree)(nil),             // 90: protocol.IncrementalMerkleTree
-	(*core2.Permission)(nil),                        // 91: protocol.Permission
-	(*core2.IncrementalMerkleVoucher)(nil),          // 92: protocol.IncrementalMerkleVoucher
-	(*core2.TransactionInfo)(nil),                   // 93: protocol.TransactionInfo
-	(*core2.SpendDescription)(nil),                  // 94: protocol.SpendDescription
-	(*core2.ReceiveDescription)(nil),                // 95: protocol.ReceiveDescription
-	(*core2.AccountBalanceRequest)(nil),             // 96: protocol.AccountBalanceRequest
-	(*core2.BlockBalanceTrace_BlockIdentifier)(nil), // 97: protocol.BlockBalanceTrace.BlockIdentifier
-	(*core2.TransferContract)(nil),                  // 98: protocol.TransferContract
-	(*core2.AccountUpdateContract)(nil),             // 99: protocol.AccountUpdateContract
-	(*core2.SetAccountIdContract)(nil),              // 100: protocol.SetAccountIdContract
-	(*core2.VoteWitnessContract)(nil),               // 101: protocol.VoteWitnessContract
-	(*core2.UpdateSettingContract)(nil),             // 102: protocol.UpdateSettingContract
-	(*core2.UpdateEnergyLimitContract)(nil),         // 103: protocol.UpdateEnergyLimitContract
-	(*core2.WitnessUpdateContract)(nil),             // 104: protocol.WitnessUpdateContract
-	(*core2.AccountCreateContract)(nil),             // 105: protocol.AccountCreateContract
-	(*core2.WitnessCreateContract)(nil),             // 106: protocol.WitnessCreateContract
-	(*core2.TransferAssetContract)(nil),             // 107: protocol.TransferAssetContract
-	(*core2.ParticipateAssetIssueContract)(nil),     // 108: protocol.ParticipateAssetIssueContract
-	(*core2.FreezeBalanceContract)(nil),             // 109: protocol.FreezeBalanceContract
-	(*core2.UnfreezeBalanceContract)(nil),           // 110: protocol.UnfreezeBalanceContract
-	(*core2.UnfreezeAssetContract)(nil),             // 111: protocol.UnfreezeAssetContract
-	(*core2.WithdrawBalanceContract)(nil),           // 112: protocol.WithdrawBalanceContract
-	(*core2.UpdateAssetContract)(nil),               // 113: protocol.UpdateAssetContract
-	(*core2.ProposalCreateContract)(nil),            // 114: protocol.ProposalCreateContract
-	(*core2.ProposalApproveContract)(nil),           // 115: protocol.ProposalApproveContract
-	(*core2.ProposalDeleteContract)(nil),            // 116: protocol.ProposalDeleteContract
-	(*core2.BuyStorageContract)(nil),                // 117: protocol.BuyStorageContract
-	(*core2.BuyStorageBytesContract)(nil),           // 118: protocol.BuyStorageBytesContract
-	(*core2.SellStorageContract)(nil),               // 119: protocol.SellStorageContract
-	(*core2.ExchangeCreateContract)(nil),            // 120: protocol.ExchangeCreateContract
-	(*core2.ExchangeInjectContract)(nil),            // 121: protocol.ExchangeInjectContract
-	(*core2.ExchangeWithdrawContract)(nil),          // 122: protocol.ExchangeWithdrawContract
-	(*core2.ExchangeTransactionContract)(nil),       // 123: protocol.ExchangeTransactionContract
-	(*core2.CreateSmartContract)(nil),               // 124: protocol.CreateSmartContract
-	(*core2.TriggerSmartContract)(nil),              // 125: protocol.TriggerSmartContract
-	(*core2.ClearABIContract)(nil),                  // 126: protocol.ClearABIContract
-	(*core2.TransactionSign)(nil),                   // 127: protocol.TransactionSign
-	(*core2.AccountPermissionUpdateContract)(nil),   // 128: protocol.AccountPermissionUpdateContract
-	(*core2.UpdateBrokerageContract)(nil),           // 129: protocol.UpdateBrokerageContract
-	(*core2.OutputPointInfo)(nil),                   // 130: protocol.OutputPointInfo
-	(*core2.MarketSellAssetContract)(nil),           // 131: protocol.MarketSellAssetContract
-	(*core2.MarketCancelOrderContract)(nil),         // 132: protocol.MarketCancelOrderContract
-	(*core2.MarketOrderPair)(nil),                   // 133: protocol.MarketOrderPair
-	(*core2.AccountBalanceResponse)(nil),            // 134: protocol.AccountBalanceResponse
-	(*core2.BlockBalanceTrace)(nil),                 // 135: protocol.BlockBalanceTrace
-	(*core2.SmartContract)(nil),                     // 136: protocol.SmartContract
-	(*core2.SmartContractDataWrapper)(nil),          // 137: protocol.SmartContractDataWrapper
-	(*core2.ChainParameters)(nil),                   // 138: protocol.ChainParameters
-	(*core2.NodeInfo)(nil),                          // 139: protocol.NodeInfo
-	(*core2.IncrementalMerkleVoucherInfo)(nil),      // 140: protocol.IncrementalMerkleVoucherInfo
-	(*core2.MarketOrderList)(nil),                   // 141: protocol.MarketOrderList
-	(*core2.MarketOrder)(nil),                       // 142: protocol.MarketOrder
-	(*core2.MarketPriceList)(nil),                   // 143: protocol.MarketPriceList
-	(*core2.MarketOrderPairList)(nil),               // 144: protocol.MarketOrderPairList
-	(*core2.DelegatedResourceAccountIndex)(nil),     // 145: protocol.DelegatedResourceAccountIndex
-	(*core2.DynamicProperties)(nil),                 // 146: protocol.DynamicProperties
+	nil,                                            // 72: protocol.AccountNetMessage.AssetNetUsedEntry
+	nil,                                            // 73: protocol.AccountNetMessage.AssetNetLimitEntry
+	nil,                                            // 74: protocol.AccountResourceMessage.AssetNetUsedEntry
+	nil,                                            // 75: protocol.AccountResourceMessage.AssetNetLimitEntry
+	(*TransactionSignWeight_Result)(nil),           // 76: protocol.TransactionSignWeight.Result
+	(*TransactionApprovedList_Result)(nil),         // 77: protocol.TransactionApprovedList.Result
+	(*DecryptNotes_NoteTx)(nil),                    // 78: protocol.DecryptNotes.NoteTx
+	(*DecryptNotesMarked_NoteTx)(nil),              // 79: protocol.DecryptNotesMarked.NoteTx
+	(*DecryptNotesTRC20_NoteTx)(nil),               // 80: protocol.DecryptNotesTRC20.NoteTx
+	(*core.Witness)(nil),                           // 81: protocol.Witness
+	(*core.Proposal)(nil),                          // 82: protocol.Proposal
+	(*core.Exchange)(nil),                          // 83: protocol.Exchange
+	(*core.AssetIssueContract)(nil),                // 84: protocol.AssetIssueContract
+	(*core.Block)(nil),                             // 85: protocol.Block
+	(*core.Transaction)(nil),                       // 86: protocol.Transaction
+	(*core.DelegatedResource)(nil),                 // 87: protocol.DelegatedResource
+	(*core.Account)(nil),                           // 88: protocol.Account
+	(*core.BlockHeader)(nil),                       // 89: protocol.BlockHeader
+	(*core.IncrementalMerkleTree)(nil),             // 90: protocol.IncrementalMerkleTree
+	(*core.Permission)(nil),                        // 91: protocol.Permission
+	(*core.IncrementalMerkleVoucher)(nil),          // 92: protocol.IncrementalMerkleVoucher
+	(*core.TransactionInfo)(nil),                   // 93: protocol.TransactionInfo
+	(*core.SpendDescription)(nil),                  // 94: protocol.SpendDescription
+	(*core.ReceiveDescription)(nil),                // 95: protocol.ReceiveDescription
+	(*core.AccountBalanceRequest)(nil),             // 96: protocol.AccountBalanceRequest
+	(*core.BlockBalanceTrace_BlockIdentifier)(nil), // 97: protocol.BlockBalanceTrace.BlockIdentifier
+	(*core.TransferContract)(nil),                  // 98: protocol.TransferContract
+	(*core.AccountUpdateContract)(nil),             // 99: protocol.AccountUpdateContract
+	(*core.SetAccountIdContract)(nil),              // 100: protocol.SetAccountIdContract
+	(*core.VoteWitnessContract)(nil),               // 101: protocol.VoteWitnessContract
+	(*core.UpdateSettingContract)(nil),             // 102: protocol.UpdateSettingContract
+	(*core.UpdateEnergyLimitContract)(nil),         // 103: protocol.UpdateEnergyLimitContract
+	(*core.WitnessUpdateContract)(nil),             // 104: protocol.WitnessUpdateContract
+	(*core.AccountCreateContract)(nil),             // 105: protocol.AccountCreateContract
+	(*core.WitnessCreateContract)(nil),             // 106: protocol.WitnessCreateContract
+	(*core.TransferAssetContract)(nil),             // 107: protocol.TransferAssetContract
+	(*core.ParticipateAssetIssueContract)(nil),     // 108: protocol.ParticipateAssetIssueContract
+	(*core.FreezeBalanceContract)(nil),             // 109: protocol.FreezeBalanceContract
+	(*core.UnfreezeBalanceContract)(nil),           // 110: protocol.UnfreezeBalanceContract
+	(*core.UnfreezeAssetContract)(nil),             // 111: protocol.UnfreezeAssetContract
+	(*core.WithdrawBalanceContract)(nil),           // 112: protocol.WithdrawBalanceContract
+	(*core.UpdateAssetContract)(nil),               // 113: protocol.UpdateAssetContract
+	(*core.ProposalCreateContract)(nil),            // 114: protocol.ProposalCreateContract
+	(*core.ProposalApproveContract)(nil),           // 115: protocol.ProposalApproveContract
+	(*core.ProposalDeleteContract)(nil),            // 116: protocol.ProposalDeleteContract
+	(*core.BuyStorageContract)(nil),                // 117: protocol.BuyStorageContract
+	(*core.BuyStorageBytesContract)(nil),           // 118: protocol.BuyStorageBytesContract
+	(*core.SellStorageContract)(nil),               // 119: protocol.SellStorageContract
+	(*core.ExchangeCreateContract)(nil),            // 120: protocol.ExchangeCreateContract
+	(*core.ExchangeInjectContract)(nil),            // 121: protocol.ExchangeInjectContract
+	(*core.ExchangeWithdrawContract)(nil),          // 122: protocol.ExchangeWithdrawContract
+	(*core.ExchangeTransactionContract)(nil),       // 123: protocol.ExchangeTransactionContract
+	(*core.CreateSmartContract)(nil),               // 124: protocol.CreateSmartContract
+	(*core.TriggerSmartContract)(nil),              // 125: protocol.TriggerSmartContract
+	(*core.ClearABIContract)(nil),                  // 126: protocol.ClearABIContract
+	(*core.TransactionSign)(nil),                   // 127: protocol.TransactionSign
+	(*core.AccountPermissionUpdateContract)(nil),   // 128: protocol.AccountPermissionUpdateContract
+	(*core.UpdateBrokerageContract)(nil),           // 129: protocol.UpdateBrokerageContract
+	(*core.OutputPointInfo)(nil),                   // 130: protocol.OutputPointInfo
+	(*core.MarketSellAssetContract)(nil),           // 131: protocol.MarketSellAssetContract
+	(*core.MarketCancelOrderContract)(nil),         // 132: protocol.MarketCancelOrderContract
+	(*core.MarketOrderPair)(nil),                   // 133: protocol.MarketOrderPair
+	(*core.AccountBalanceResponse)(nil),            // 134: protocol.AccountBalanceResponse
+	(*core.BlockBalanceTrace)(nil),                 // 135: protocol.BlockBalanceTrace
+	(*core.SmartContract)(nil),                     // 136: protocol.SmartContract
+	(*core.SmartContractDataWrapper)(nil),          // 137: protocol.SmartContractDataWrapper
+	(*core.ChainParameters)(nil),                   // 138: protocol.ChainParameters
+	(*core.NodeInfo)(nil),                          // 139: protocol.NodeInfo
+	(*core.IncrementalMerkleVoucherInfo)(nil),      // 140: protocol.IncrementalMerkleVoucherInfo
+	(*core.MarketOrderList)(nil),                   // 141: protocol.MarketOrderList
+	(*core.MarketOrder)(nil),                       // 142: protocol.MarketOrder
+	(*core.MarketPriceList)(nil),                   // 143: protocol.MarketPriceList
+	(*core.MarketOrderPairList)(nil),               // 144: protocol.MarketOrderPairList
+	(*core.DelegatedResourceAccountIndex)(nil),     // 145: protocol.DelegatedResourceAccountIndex
+	(*core.DynamicProperties)(nil),                 // 146: protocol.DynamicProperties
 }
 var file_api_api_proto_depIdxs = []int32{
 	0,   // 0: protocol.Return.code:type_name -> protocol.Return.response_code
