@@ -7,7 +7,7 @@
 package api
 
 import (
-	"github.com/tron-client/core"
+	"github.com/crypee-ecoinomy/tron-client/core"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
